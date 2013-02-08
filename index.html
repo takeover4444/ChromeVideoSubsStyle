@@ -13,19 +13,22 @@
 
       #video3 track {
         font-size: 10px;
-        line-height: 30px;
+        line-height: 40px;
       }
 
       #video4 video {
         font-size: 10px;
-        line-height: 30px;
+        line-height: 40px;
       }
     </style>
   </head>
 
   <body>
+    <h1>Chrome HTML5 Video Subs styling</h1>
+    <p>Don't need to play any video, just activate the subtitles of each video</p>
+
     <div id="video1">
-      <h1>Video1</h1>
+      <h2>Video1</h2>
       <p>No styles to be inherited</p>
       <video width="340" controls="controls">
         <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
@@ -34,7 +37,7 @@
     </div>
 
     <div id="video2">
-      <h1>Video2</h1>
+      <h2>Video2</h2>
       <p>Styles to be inherited from div</p>
       <p>Try to click in fullscreen mode, and see how the subtitles overlap</p>
       <video width="340" controls="controls">
@@ -44,7 +47,7 @@
     </div>
 
     <div id="video3">
-      <h1>Video3</h1>
+      <h2>Video3</h2>
       <p>Styles to be inherited from div but trying to solve with 'track' styles</p>
       <p>Styles over 'track' element has not any effect</p>
       <video width="340" controls="controls">
@@ -54,7 +57,7 @@
     </div>
 
     <div id="video4">
-      <h1>Video4</h1>
+      <h2>Video4</h2>
       <p>Styles to be inherited from div but trying to solve with 'video' styles</p>
       <p>Try to click in fullscreen mode, then subtitles display "better"</p>
       <video width="340" controls="controls">
