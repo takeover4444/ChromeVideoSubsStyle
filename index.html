@@ -1,16 +1,52 @@
 <html>
   <head>
     <style>
-      body {
+      #video2 {
         font-size: 10px;
         line-height: 10px;
       }
+
+      #video3 {
+        font-size: 10px;
+        line-height: 10px;
+      }
+
+      #video3 track {
+        font-size: 10px;
+        line-height: 30px;
+      }
     </style>
   </head>
+
   <body>
-    <video width="340" controls="controls" id="video">
-      <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
-      <track kind="subtitles" src="subs.vtt" />
-    </video>
+    <div id="video1">
+      <h1>Video1</h1>
+      <p>No styles to be inherited</p>
+      <video width="340" controls="controls">
+        <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
+        <track kind="subtitles" src="subs.vtt" />
+      </video>
+    </div>
+
+    <div id="video2">
+      <h1>Video2</h1>
+      <p>Styles to be inherited from div</p>
+      <p>Try to click in fullscreen mode, and see how the subtitles overlap</p>
+      <video width="340" controls="controls">
+        <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
+        <track kind="subtitles" src="subs.vtt" />
+      </video>
+    </div>
+
+    <div id="video3">
+      <h1>Video3</h1>
+      <p>Styles to be inherited from div but trying to solve with track styles</p>
+      <p>Try to click in fullscreen mode, then subtitles display "better"</p>
+      <video width="340" controls="controls">
+        <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
+        <track kind="subtitles" src="subs.vtt" />
+      </video>
+    </div>
   </body>
+
 </html>
