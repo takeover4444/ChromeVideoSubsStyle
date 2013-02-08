@@ -15,6 +15,11 @@
         font-size: 10px;
         line-height: 30px;
       }
+
+      #video4 video {
+        font-size: 10px;
+        line-height: 30px;
+      }
     </style>
   </head>
 
@@ -40,7 +45,17 @@
 
     <div id="video3">
       <h1>Video3</h1>
-      <p>Styles to be inherited from div but trying to solve with track styles</p>
+      <p>Styles to be inherited from div but trying to solve with 'track' styles</p>
+      <p>Styles over 'track' element has not any effect</p>
+      <video width="340" controls="controls">
+        <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
+        <track kind="subtitles" src="subs.vtt" />
+      </video>
+    </div>
+
+    <div id="video4">
+      <h1>Video4</h1>
+      <p>Styles to be inherited from div but trying to solve with 'video' styles</p>
       <p>Try to click in fullscreen mode, then subtitles display "better"</p>
       <video width="340" controls="controls">
         <source src="http://archive.org/download/Pepa-creativeCommonsMp4956/Pepa-creativeCommonsMp4956.mp4" type="video/mp4" />
